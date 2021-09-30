@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+		body
+		{
+			background: #080706;
+
+			font-family: cursive;
+		}
+		.jip
+		{
+			background: #594D46;
+			width: 250px;
+			height: 100px;
+			position: absolute;
+			top: 500px;
+			left: 360px;
+			border-radius: 10px;
+			text-align: center;
+			font-size: 25px;
+			color: #EFEFEF;
+
+		}
+		.vaina
+		{
+			background: #D1B280;
+			width: 300px;
+			position: absolute;
+			top: 300px;
+			left: 760px;
+			color: white;
+			border-radius: 10px;
+			padding-left: 10px;
+			padding-bottom: 10px;
+			padding-right: 10px;
+			box-sizing: border-box;
+			font-size: 20px;
+			border: 5px solid;
+
+		}
+		.ra
+		{
+			background: #EFEFEF;
+			width: 150px;
+			height: 100px;
+			position: absolute;
+			top: 390px;
+			left: 360px;
+			color: black;
+			border-radius: 10px;
+			padding-left: 10px;
+			padding-bottom: 10px;
+			padding-bottom: 10px;
+			box-sizing: border-box;
+			font-size: 20px;
+		}
+		.er
+		{
+			background: #EFEFEF;
+			width: 150px;
+			height: 100px;
+			position: absolute;
+			top: 250px;
+			left: 360px;
+			color: black;
+			border-radius: 10px;
+			padding-left: 10px;
+			padding-bottom: 10px;
+			padding-bottom: 10px;
+			box-sizing: border-box;
+			font-size: 20px;
+		}
+		.repo
+		{
+			background: #D1B280;
+			width: 300px;
+			height: 400px;
+			position: absolute;
+			top: 200px;
+			left: 330px;
+			border-radius: 10px;	
+			border: 5px solid;
+			color: #EFEFEF;
+		}
+		.enlace
+		{
+
+			background: #D1B280;
+			width: 200px;
+			height: 100px;
+			position: absolute;
+			top: 150px;
+			left: 760px;
+			color: white;
+			border-radius: 10px;
+			padding-left: 10px;
+			padding-bottom: 10px;
+			padding-right: 10px;
+			box-sizing: border-box;
+			font-size: 20px;
+			border: 5px solid;
+			text-align: center;
+		}
+	</style>
+
+		<dir class="repo"></dir>
+
+	<label>Numero</label>																										
+	<input type="text" id="precio" class="ra" placeholder="Numero">
+	<label>Nombre</label>
+	<input type="text" id="nombre" class="er" placeholder="Nombres">
+	<div class="jip" onclick="gru()">INGRESAR</div>
+	<div class="per"></div>
+	<div class="vaina" id="ratica"></div>
+	<div class="enlace"><a href="cuadrorandom.html" style="text-decoration: none; color: white;">PUNTO 2</a></div>
+
+
+
+	<script>
+		
+		function gru() 
+		{
+			n1=Number(precio.value);
+			m=(nombre.value);
+			nuevo=m+" "+n1;
+			conte=ratica.innerHTML;
+			conte=conte+nuevo;
+			ratica.innerHTML=conte+"   ";
+		}
+
+	</script>
+	
+</body>
+</html>
