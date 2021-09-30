@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		
+		body
+		{
+			background: #080706;
+
+		}
+
+		.pedro
+		{
+			width: 100px;
+			height: 100px;
+			background: #D1B280;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			border-radius: 10px;
+		}
+		.poder
+		{
+			width: 80%;
+			height: 80%;
+			background: #EFEFEF;
+			position: absolute;
+			top: 10%;
+			left: 10%;
+			border-radius: 10px;
+
+		}
+	</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body onload="click()">
+	<div class="poder"></div>
+
+	<div onmousedown="traque(event)" onclick="rodaje()" class="pedro" id="fercho"></div>
+
+
+
+	<audio src="tuki.mp3.mp3" id="ja"></audio>
+
+	<script>
+		
+
+		function click()
+		{
+			var numx=Math.floor((Math.random() * (70 - 20))+20);
+			var numy=Math.floor((Math.random() * (70 - 20))+20);
+
+			fercho.style.top=numx+"%";
+			fercho.style.left=numy+"%";
+		}
+
+		function traque()
+		{
+			console.log(fercho.style.top);
+			console.log(fercho.style.left);
+			var numx=Math.floor((Math.random() * (70 - 20))+20);
+			var numy=Math.floor((Math.random() * (70 - 20))+20);
+
+			fercho.style.top=numx+"%";
+			fercho.style.left=numy+"%";
+			ja.play();
+	
+		}
+
+
+
+	</script>
+</body>
+</html>
